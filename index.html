@@ -1,23 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<style>
-		body{
-			background-color: lightblue;
-		}
-		p{
-			font-family:verdana;
-			font-size:20px;
-   	   	}
-		<link herf="css/bootstrap.class" rel="stylesheet">
+		<title>SWARNA</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  			<link herf="css/bootstrap.class" rel="stylesheet">
 		<link rel="stylesheet" herf="css/font-awesome.min.css">
 		<!--Link the main.css  stylesheet-->
 		<link herf ="css/style.css" rel="stylesheet">
-		<title>SWARNA</title>
-	</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
+	<style>
+	#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+	}
+
+	#customers td, #customers th {
+    	border: 1px solid #ddd;
+    	padding: 8px;
+	}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+	
+	body {
+ 		 background-image: url("i1.jpg");
+		  background-position: center; 
+ 		 font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
+		  font-weight: 300;
+		  font-size: 16px;
+		  color: #555;
+
+
+	  -webkit-font-smoothing: antialiased;
+	  -webkit-overflow-scrolling: touch;
+			}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
+  font-weight: 300;
+  color: #333;
+}
+
+/* Paragraph & Typographic */
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+		
+	</style>
+	
 	<body>
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+  			    <div class="navbar-header">
+    				<a class="navbar-brand" href="#">Swarna</a>
+   				</div>
+   				<ul class="nav navbar-nav">
+    				<li class="active"><a href="#">Home</a></li>
+    				<li><a href="#">Page 1</a></li>
+   				</ul>
+ 			</div>
+		</nav>
+
 		<div class="header" id="headerwrap">
 			<div class="container">
 				<div class="row centered">
@@ -30,24 +91,17 @@
 				</div><!--/.row-->
 			</div><!--/.container-->
 		</div><!--/.#headerwrap-->
-	</body>
-	<section id="about" name="about"></section>
-		<div class="about">
-			<div class="container">
 				<div class="row">
-					<div class="col-lg-2 col-lg-offset-1">
-						
+					<div class="col-lg-6 col-lg-offset-1">						
+														
+						<p>Hello folks! I welcome you to my personal info page.<br/>
+							I am pursuing my BTech. in the stream of Mechanical Engineering. <br/>
+							I am a beginer in the the field of Web Designing and front end devloping.
+						</p>
 					</div>
-					<div class="col-lg-6">
-	<p>Hello folks! I welcome you to my personal info page.<br/>
-		I am pursuing my BTech. in the stream of Mechanical Engineering. <br/>
-		I am a beginer in the the field of Web Designing and front end devloping.
-	</p>
-	</div>
 					<div class="col-lg-3">
 						<p><a href="my resume.pdf"><i class="icon.file"></i> <sm>DOWNLOAD PDF</sm></a></p>
 					</div>
-
 				</div><!--/.row-->
 			</div><!--/.container-->
 		</div><!--/ #intro-->
@@ -55,37 +109,24 @@
 		<!--EDUCATION SECTION-->
 		<div class="container desc">
 			<div class="row">
-					<div class="col-lg-2 col-lg-offset-1">
-						<h3>EDUCATION</h3>
-					</div>
-					<!--EDIT:education line 1-->
-					<div class="col-lg-6">
-						<p><t>BTech. at IIT MANDI 2017-2021</t><br/>
-							  High School Central Academy Kota 2015 batch
-							<!--<br/><i>Extra info here</i>-->
-						</p>
-					</div>
-					<div class="col-lg-3">
-						<p><sm>Contact</sm><br/>
-						<imp><sm>b17145@students.iitmandi.ac.in<br/></sm></imp>
-								 swarna.bisane@gmail.com
-						</p>
-					</div>
+			<table id="customers">
+  			<tr>
+  			<th>Education  <a  class="fa fa-book" style="font-size:24px;"></a></th>
+  			</tr>
+  			<tr>
+  			<td>BTech. at IIT MANDI 2017-2021</td>
+  			</tr>
+  			<tr><td>High School Central Academy Kota 2015 batch</td></tr>
+  			<tr><th>Contact  <a  class="fa fa-envelope" style="font-size:24px;"></a></th>
+  			</tr>
+  			<tr><td>b17145@students.iitmandi.ac.in</td>
+  			</tr>
+  			<tr><td>swarna.bisane@gmail.com</td></tr>
 
-					<!--EDIT education line 2-->
-					<div class="col-lg-6 col-lg-offset-3">
-						<p><t>Associate of degrees</t><br/>
-							Lil 'ol college
-							<!--<br/><i>Extra info here</i>-->
-						</p>
-					</div>
-					<div class="col-lg-3">
-						<p><sm>JUNE 2021</sm></p>
-					</div>
 
 			</div><!--/.row -->
 			<br>
 			<hr>
 		</div><!--/. container -->
-	</section>
+	</body>
 </html>
